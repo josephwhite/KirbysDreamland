@@ -1,3 +1,8 @@
+@font-face {
+font-family: "pressstart2p";
+src: url("fonts/pressstart2p.tff");
+}
+
 .banana {
 z-index:    -50;
 top:        0;
@@ -7,6 +12,8 @@ background-color: #c199c1;
 opacity: 0.7;
 width: 100%;
 height: 100%;
+font-size: 10px;
+font-family: 'pressstart2p';
 object-fit: cover;
 }
 
@@ -17,7 +24,8 @@ background-color: #f9a2b6;
 border: none;
 color: #FFFFFF;
 text-align: center;
-font-size: 15px;
+font-size: 10px;
+font-family: 'pressstart2p';
 padding: 10px;
 width: 150px;
 transition: all 0.5s;
@@ -58,7 +66,8 @@ background-color: #f9a2b6;
 border: none;
 color: #FFFFFF;
 text-align: center;
-font-size: 15px;
+font-size: 10px;
+font-family: 'pressstart2p';
 padding: 10px;
 width: 150px;
 transition: all 0.5s;
@@ -121,5 +130,7 @@ right: 0;
           transform: translateX(-50%);
   left: 50%;
   background-color: #f9a2b6;
+	font-size: 10px;
+	font-family: 'pressstart2p';
   position: absolute;
 }

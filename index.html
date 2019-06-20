@@ -13,25 +13,38 @@
   ga('create', 'UA-92529337-1', 'auto');
   ga('send', 'pageview');
 </script>
+<style>
+@font-face {
+   font-family: pressstart2p;
+   src: url("fonts/pressstart2p.ttf");
+}
+
+* {
+   font-family: pressstart2p;
+}
+</style>
 </head>
 
 <body>
 <script type="text/javascript">
-	ChangeIt();
+	changeWallpaper();
 	</script>
 <div>
 <nav class="navbar navbar-inverse navbar-static-top example-8">
     <div class="container">
       <div class="navbar-header">
-        <a class="navbar-brand text-hide" href="#">Brand Text
+        <a class="navbar-brand text-hide" href="#">
         </a>
       </div>
       <div id="navbar8" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-left">
+          <li class="active"><a href="https://github.com/josephwhite/KirbysDreamland">GitHub</a></li>
+          <li class="active"><a href="https://kirbycafe.jp/">Cafe</a></li>
+        </ul>
         <ul class="nav navbar-nav navbar-right">
           <li class="active"><a href="https://kirby.nintendo.com/">EN</a></li>
 					<li class="active"><a href="https://www.kirby.jp/">JA</a></li>
         </ul>
-
       </div>
       <!--/.nav-collapse -->
     </div>
@@ -40,7 +53,7 @@
 </div>
 
 <div class=ytv>
-	<iframe id="playlist" width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLviFssLmTTY17NIAO7lYe6leV_IfqVfU6&index=0" frameborder="0" allow="autoplay;" allowfullscreen></iframe>
+	<iframe id="playlist" width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLviFssLmTTY17NIAO7lYe6leV_IfqVfU6&autoplay=1&index=0" frameborder="0" allowfullscreen></iframe>
 </div>
 
 <div id=button>
@@ -51,16 +64,14 @@
 <div class=button3>
 	<button class="button" z-index="900"><span>New Image</span></button>
 		<script>
-document.getElementsByClassName('button')[0].onclick = function(event){ ChangeIt();
- }
-	</script>
-</div>
+      document.getElementsByClassName('button')[0].onclick = function(event){ changeWallpaper(); }
+    </script>
+  </div>
 
 <div class=button4>
 	<button class="button1" z-index="900"><span>New Video</span></button>
 <script>
-document.getElementsByClassName('button1')[0].onclick = function(event){ video();
- }
+document.getElementsByClassName('button1')[0].onclick = function(event){ changeVideo(); }
 	</script>
 </div>
 
@@ -68,7 +79,7 @@ document.getElementsByClassName('button1')[0].onclick = function(event){ video()
 </div>
 
 <script>
-		video();
+		changeVideo();
 </script>
 
 	</body>
